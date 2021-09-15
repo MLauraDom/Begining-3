@@ -1,26 +1,35 @@
+body {
+  color: #582e0f;
+  font-size: medium;
+  background-color: #f8d39c;
+}
+
 main {
+  background-color: #f8d39c;
   background-repeat: no-repeat;
   background-image: url("../img/up.png"), url("../img/horizontal.png"), url("../img/vertikal.png"), url("../img/vertikal.png"), url("../img/left.png"), url("../img/right.png");
   background-position: center top, bottom center, left center, right center, bottom left, bottom right;
   padding: 100px 200px;
 }
 
-h1 {
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-}
-
-p {
+h1, h3 {
   color: #582e0f;
+  text-align: center;
   font-size: medium;
 }
 
 a {
   font-style: bold;
   text-decoration: none;
+  color: #f8d39c;
+  font-size: medium;
+  background-color: #582e0f;
+  width: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
 }
 
 .div1 {
@@ -30,6 +39,7 @@ a {
 }
 
 .div1:hover {
+  background-color: white;
   width: 100%;
   height: 170px;
   border-radius: 5px;
@@ -44,9 +54,11 @@ a {
   transition: height 1s, width 1s, -webkit-transform 1s;
   transition: height 1s, width 1s, transform 1s;
   transition: height 1s, width 1s, transform 1s, -webkit-transform 1s;
+  color: #582e0f;
 }
 
 .div2:hover {
+  background-color: white;
   width: 100%;
   height: 150px;
   border-radius: 5px;
@@ -54,20 +66,23 @@ a {
 }
 
 .button {
-  border: 2px outset;
-  margin: 2px;
-  border-radius: 25px;
-  padding: 5px 10px;
-  text-align: center;
-  display: inline-block;
+  width: 100%;
 }
 
-.button:hover {
-  border: 1px inset #3d2515;
+.divbutton {
+  width: 100px;
+  height: 50px;
+}
+
+.divbutton:hover .button {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 li {
+  color: #582e0f;
   font-size: medium;
+  font-style: normal;
 }
 
 section {
@@ -80,5 +95,16 @@ footer {
   font-style: bold;
   color: #582e0f;
   padding: 30px;
+}
+
+#test {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+#test a {
+  background-color: blue;
+  width: 100%;
 }
 /*# sourceMappingURL=style2.css.map */
